@@ -1,4 +1,4 @@
-# DirectoryMonitor
+# Assignment
 This application consists of two main components: a Client and a Server. The Client monitors a specified directory for new Java properties files. Upon detecting a new file, it filters the file's contents based on a configurable regex pattern for keys, sends the filtered properties to the Server, and then deletes the file. The Server receives filtered properties from the Client, reconstructs the properties file, and saves it to a specified directory.
 
 
@@ -44,4 +44,5 @@ To test the application, place a .properties file in the directory being monitor
 - Ensure both Client and Server configurations point to accessible directories and the Server's listening port is open.
 - Verify the regex pattern matches the desired keys in the properties files.
 - Check for any firewall or network issues that might prevent the Client and Server from communicating.
+
 
